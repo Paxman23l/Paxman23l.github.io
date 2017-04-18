@@ -5,8 +5,16 @@ body {
     color: #545454;
     font-weight: bold;
 }
+nav img {
+  max-width: 30px;
+  max-height: 30px;
+}
 .pome {
     color: coral;
+}
+
+.border {
+  border: 1px solid black;
 }
 img {
     max-width: 100%;
@@ -440,6 +448,8 @@ h3>.fa {
     margin-top: 20px;
 }
 .portfolio-item {
+  color: white;
+  height: 20rem;
     -webkit-margin-bottom: 20px;
     -moz-margin-bottom: 20px;
     -ms-margin-bottom: 20px;
@@ -449,8 +459,10 @@ h3>.fa {
 }
 .portfolio-item-preview {
     position: relative;
+    text-align: center;
 }
 .portfolio-item:hover .portfolio-item-preview {
+  color: white;
     -webkit-transform: scale(1.1) rotate(2deg);
     -moz-transform: scale(1.3) rotate(3deg);
     -ms-transform: scale(1.3) rotate(3deg);
@@ -458,6 +470,8 @@ h3>.fa {
     transform: scale(1.2) rotate(3deg);
 }
 .portfolio-item:hover .portfolio-item-description {
+    color: white;
+    background-color: coral;
     opacity: 1;
     bottom: 0;
 }
@@ -473,6 +487,10 @@ h3>.fa {
     color: white;
     border-radius: 3px;
     box-shadow: 0px 2px 10px 2px #666;
+}
+.portfolio-item-description h3
+{
+  color: white;
 }
 #contact {
     background: #18191a;
