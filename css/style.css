@@ -51,7 +51,7 @@ h2 {
 }
 h3 {
     color: #000;
-    font-size: 22px;
+    font-size: 1.75rem;
     text-transform: uppercase;
     margin: 5px 0 15px;
     font-family: 'Lato', sans-serif;
@@ -498,7 +498,7 @@ h3>.fa {
     right: 0;
     bottom: -70px;
     left: 0;
-    padding: 20px;
+    padding: .75rem;
     text-align: center;
     opacity: 0;
     color: white;
