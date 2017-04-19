@@ -4,7 +4,19 @@ body {
     font: 300 15px/1.6 'Lato', sans-serif;
     color: #545454;
     font-weight: bold;
+    background-image: url("../img/WhiteBackground3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    -webkit-background-size: cover;
+
+    -moz-background-size: cover;
+
+    -o-background-size:cover;
+
 }
+
 nav img {
   max-width: 30px;
   max-height: 30px;
@@ -13,9 +25,6 @@ nav img {
     color: coral;
 }
 
-.border {
-  border: 1px solid black;
-}
 img {
     max-width: 100%;
     height: auto;
@@ -78,6 +87,7 @@ a, .btn, .navbar, .form-control, .portfolio-item-description {
     -o-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
+
 .btn, .panel, .progress, .form-control, .modal-content, .form-control:hover, .form-control:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -226,7 +236,10 @@ section.callout {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: bottom;
+    border-top: 2px solid coral;
+    border-bottom: 2px solid coral;
 }
+
 #services {
     padding: 0;
 }
@@ -318,10 +331,10 @@ h3>.fa {
     }
 }
 .navbar {
-    background: #333337;
+    background: rgba(0,0,0,.75);
     border-radius: 0;
     border: 0;
-    padding: 20px 0;
+    padding: 10px 0;
     text-transform: uppercase;
     color: #FFF !important;
 }
@@ -346,9 +359,10 @@ h3>.fa {
     font-family: 'Lato', sans-serif;
 }
 .navbar-color, .custom-collapse {
-    background: #ecf0f1;
+    background: rgba(255,255,255,.82);
     box-shadow: 0 0 4px rgba(0, 0, 0, .2);
     padding: 0;
+    border-bottom: 1px solid coral;
 }
 .navbar-color .navbar-brand, .custom-collapse .navbar-brand, .navbar-color .navbar-nav>li>a, .navbar-color .navbar-nav .dropdown-menu>li>a, .custom-collapse .navbar-nav>li>a, .custom-collapse .navbar-nav .dropdown-menu>li>a {
     color: coral;
@@ -392,6 +406,7 @@ h3>.fa {
 #profile-contact {
     box-shadow: 0 0 4px rgba(0, 0, 0, .2);
     padding: 20px 0;
+    border-top: 5px solid coral;
 }
 .profile-item i {
     display: block;
@@ -447,8 +462,10 @@ h3>.fa {
 .owl-theme .owl-controls .owl-pagination {
     margin-top: 20px;
 }
+
 .portfolio-item {
   color: white;
+  width: auto;
   height: 20rem;
     -webkit-margin-bottom: 20px;
     -moz-margin-bottom: 20px;
@@ -492,9 +509,34 @@ h3>.fa {
 {
   color: white;
 }
+#portfolio, #profile, #services, #resume{
+  padding: 5rem;
+}
+
+#portfolio::before, #profile::before, #services::before, #resume::before{
+  content:"";
+  position: absolute;
+  top:0;
+  left:50%;
+  width: 40%;
+  height: 1px;
+  margin-left: -20%;
+  background: coral;
+}
+
+.separator{
+  padding-top: 5rem;
+}
+
+#portfolio img {
+  width: 100%;
+}
+
 #contact {
-    background: #18191a;
+    background: black;
     color: #FFF;
+    padding: 0;
+    /*background-image: url("../img/WhiteBackground3.jpg");*/
 }
 #contact h1, #contact h2, #contact h3, #contact h4, #contact h5, #contact h6 {
     color: #FFF;
@@ -507,7 +549,7 @@ h3>.fa {
 }
 #footer {
     text-align: center;
-    background: #141414;
+    background: black;
     padding: 20px 0;
     color: #FFF;
 }
