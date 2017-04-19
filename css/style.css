@@ -509,7 +509,7 @@ h3>.fa {
 {
   color: white;
 }
-#portfolio, #profile, #resume{
+#portfolio, #profile, #services, #resume{
   padding: 5rem;
 }
 
@@ -549,8 +549,7 @@ h3>.fa {
 }
 #footer {
     text-align: center;
-    background: url("../img/HeaderBackgroundOption2.PNG") ;
-    background-position: center;
+    background: black;
     padding: 20px 0;
     color: #FFF;
 }
