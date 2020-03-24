@@ -1,0 +1,397 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto:100&display=swap');
+$font-primary: 'Raleway', sans-serif;
+$font-secondary: 'Roboto', sans-serif;
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$website-primary: mat-palette($mat-light-blue, 900); //mat-color(#546e7a); 
+$website-accent:  mat-palette($mat-grey, 50); // mat-color(#f9683a); // #dd2c00; //
+// The warn palette is optional (defaults to red).
+$website-warn: mat-palette($mat-red); // mat-color(#870000);
+// Create the theme object (a Sass map containing all of the palettes).
+$website-theme: mat-light-theme($website-primary, $website-accent, $website-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($website-theme);
+$primary: mat-color($website-primary);
+$accent: mat-color($website-accent);
+$warn: mat-color($website-warn);
+$primary-text: white;
+$secondary-text: black;
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+
+html {
+    background-color: rgb(52,58,64);
+    font-weight: bold !important;
+}
+
+body {
+  font-family: $font-secondary;
+//   background-color: rgb(52,58,64) !important;
+//   color: white;
+  margin: 0;
+
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+// .cursive-font {
+//     font-family: 'Amatic SC', cursive;
+// }
+// .cursive-font-md {
+//     font-family: 'Amatic SC', cursive;
+//     font-size: 2rem;
+// }
+// .cursive-font-lg {
+//     font-family: 'Amatic SC', cursive;
+//     font-size: 3rem;
+// }
+
+.display-font {
+//   font-family: 'Roboto', "Helvetica Neue", sans-serif;
+//   font-size: 1.3rem;
+//   line-height: 1.6;
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.mh-15 {
+    max-height: 15rem;
+}
+
+.mh-20 {
+    max-height: 20rem;
+}
+
+.mw-20 {
+    min-width: 20rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+.mt-2 {
+    margin-top: 2rem;
+}
+.mt-3 {
+    margin-top: 3rem;
+}
+.mt-4 {
+    margin-top: 4rem;
+}
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.my-4 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.mx-4 {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+
+.text-indent {
+    text-indent: 5rem;
+}
+
+.app-white-text {
+    color: white;
+}
+
+.card-header {
+    // font-family: 'Amatic SC', cursive;
+    font-size: 1.7rem;
+}
+
+.nav-item > .dropdown-menu > .dropdown-item {
+    font-size: 2rem;
+}
+
+.nav-item > .dropdown-menu > .dropdown-header {
+    font-size: 1.2rem;
+}
+
+// .pill-hover:hover {
+//     color: black !important;
+//     background-color: white;
+// }
+
+.h-1 {
+  height: 1rem;
+}
+.h-2 {
+  height: 2rem;
+}
+.h-3 {
+  height: 3rem;
+}
+.h-4 {
+  height: 4rem;
+}
+.h-5 {
+  height: 5rem;
+}
+.h-6 {
+  height: 6rem;
+}
+.h-7 {
+  height: 7rem;
+}
+.h-8 {
+  height: 8rem;
+}
+.h-9 {
+  height: 9rem;
+}
+.h-10 {
+  height: 10rem;
+}
+.h-11 {
+  height: 11rem;
+}
+.h-12 {
+  height: 12rem;
+}
+.h-13 {
+  height: 13rem;
+}
+.h-14 {
+  height: 14rem;
+}
+.h-15 {
+  height: 15rem;
+}
+.h-16 {
+  height: 16rem;
+}
+.h-17 {
+  height: 17rem;
+}
+.h-18 {
+  height: 18rem;
+}
+.h-19 {
+  height: 19rem;
+}
+.h-20 {
+  height: 20rem;
+}
+.h-21 {
+  height: 21rem;
+}
+.h-22 {
+  height: 22rem;
+}
+.h-23 {
+  height: 23rem;
+}
+.h-24 {
+  height: 24rem;
+}
+.h-25 {
+  height: 25rem;
+}
+.h-26 {
+  height: 26rem;
+}
+.h-27 {
+  height: 27rem;
+}
+.h-28 {
+  height: 28rem;
+}
+.h-29 {
+  height: 29rem;
+}
+.h-30 {
+  height: 30rem;
+}
+.h-100 {
+  height: 100%;
+}
+
+.m-0 {
+  margin: 0;
+}
+.m-1 {
+  margin: 1rem;
+}
+.m-2 {
+  margin: 2rem;
+}
+.m-3 {
+  margin: 3rem;
+}
+.m-4 {
+  margin: 4rem;
+}
+.m-5 {
+  margin: 5rem;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.p-0 {
+  padding: 0;
+}
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+.p-4 {
+  padding: 4rem;
+}
+.p-5 {
+  padding: 5rem;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+.py-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.py-1 {
+  padding-left: 1 !important;
+  padding-right: 1 !important;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.fs-1 {
+  font-size: 1rem !important;
+}
+.fs-1-1 {
+  font-size: 1.1rem !important;
+}
+.fs-1-2 {
+    font-size: 1.2rem !important;
+}
+.fs-1-5 {
+  font-size: 1.5rem !important;
+}
+.fs-1-75 {
+  font-size: 1.75rem !important;
+}
+.fs-2 {
+  font-size: 2rem !important;
+}
+.fs-3 {
+  font-size: 3rem !important;
+}
+.fs-4 {
+  font-size: 4rem !important;
+}
+.fs-5 {
+  font-size: 5rem !important;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.font-weight-bolder {
+  font-weight: bolder;
+}
+
+.border {
+  border: 1px solid;
+}
+
+.border-bottom {
+  border-bottom: 1px solid;
+}
+
+.border-white {
+  border-color: white;
+}
+
+.border-accent {
+  border-color: $accent;
+}
+.border-accent {
+  border-color: $primary;
+}
+
+.border-medium {
+  border-width: medium;
+}
+
+.border-thick {
+  border-width: thick;
+}
+
+.btn-success {
+  background-color: #4caf50;
+  border-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-success:hover {
+  background-color: #46a149;
+  border-color: #39843c;
+}
+
+// .display-card {
+//   background-color: white;
+//   color: black;
+//   border: 1px solid $primary;
+//   // box-shadow: 5px 10px black;
+//   // border-color: $primary;
+// }
+
+.bg-warning {
+  background-color: #ffc107 !important;
+}
